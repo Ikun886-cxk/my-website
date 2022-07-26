@@ -1,0 +1,947 @@
+---
+title: 履云录
+tags:
+  - 演示
+  - 开始上手
+---
+import Alert from '@mui/material/Alert';
+import Head from '@docusaurus/Head';
+import Link from '@docusaurus/Link';
+import AspectRatio from '@mui/joy/AspectRatio';
+import Box from '@mui/joy/Box';
+import Button from '@mui/material/Button';
+import Card from '@mui/joy/Card';
+import IconButton from '@mui/joy/IconButton';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+import CardCover from '@mui/joy/CardCover';
+import { Fancybox as NativeFancybox } from "@fancyapps/ui/dist/fancybox.esm.js";
+import "@fancyapps/ui/dist/fancybox.css";
+
+<head>
+<script src="https://fastly.jsdelivr.net/gh/SurpriseLon/Fontawesome-6@main/js/all.js" async=""></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+<script src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/common.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+</head>
+<div class="flex p-4 mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800" role="alert">
+  <i aria-hidden="true" class="fa-duotone fa-pause inline flex-shrink-0 mr-3 w-5 h-5" ></i>
+  <span class="sr-only">Info</span>
+  <div>
+    <span class="font-medium">作者现在正在重新开发战棋版游戏，并预期在steam上发行。</span>
+  </div>
+</div>
+<div class="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+  <Fancybox data-fancybox data-src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/Lvyunlu-x4.webp">
+  <img class="rounded-t-lg" src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/Lvyunlu-x4.webp" alt="" />
+</Fancybox>
+</div>
+<div class="flex p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
+  <svg aria-hidden="true" class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+  <span class="sr-only">Info</span>
+  <div>
+    <span class="font-medium">点一下图片的略缩图可以调出原图哦！</span>
+  </div>
+</div>
+<iframe src="//player.bilibili.com/player.html?aid=331111911&bvid=BV1MA411H73z&cid=279521166&page=1&high_quality=1&danmaku=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowFullScreen" width="100%" height="500" scrolling="no" class="relative mx-auto mt-12 w-full max-w-4xl rounded-3xl border border-gray-300 shadow-2xl lg:mt-20 dark:border-gray-700 yt-video"> </iframe> 
+<Typography variant="subtitle1" gutterBottom component="div">《履lǚ云录》（Elysium Above）是由《履云录》制作组（现叫Sweet Potato Studio）制作的一款AVG游戏，作者为亚罗神虎。AVG版本现已出至第三章。AVG版本现已作为废案，不再更新。
+作者现在正在重新开发战棋版游戏，并预期在steam上发行。</Typography>
+
+## <i className="fa-duotone fa-badminton"></i> 游戏介绍
+
+### <i className="fa-duotone fa-cloud-meatball"></i> 故事背景
+  
+<Typography variant="subtitle2" gutterBottom component="div">
+	  分封制王国“万衍”王权渐衰，各封国间烽烟四起。东海边小国“帛”十一年前被北方大国“戮”所灭。十一年后，帛故都宛央城郊，帛太子荒朱带领援军前来，准备夺回家国。 战棋游戏《履云录》中，玩家将作为指挥官，与八位主角一起见证东海各国的兴衰。
+	  </Typography>
+
+### <i className="fa-duotone fa-fire-flame"></i> 游戏特色
+
+<div class="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+		<Fancybox data-fancybox data-src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/%E5%B1%A5%E4%BA%91%E5%BD%95%E6%B8%B8%E6%88%8F%E7%94%BB%E9%9D%A2-x4.webp">
+          <img class="rounded-t-lg" src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/%E5%B1%A5%E4%BA%91%E5%BD%95%E6%B8%B8%E6%88%8F%E7%94%BB%E9%9D%A2-x4.webp"/>
+		  </Fancybox>
+  </div>  
+<Typography variant="subtitle2" gutterBottom component="div">
+	  《履云录》中，玩家将扮演东海边小国——“帛”的初阶指挥官，于山雨欲来、乌云压城之时通过巧妙地排兵布阵和高超的指挥来帮助刚刚复国的帛国抵挡环伺的强敌的侵攻，一步一步探求各方势力的所求并最终做出抉择将故事引向不同的方向。
+	  游戏采用半即时的“时刻”制。在行动点数耗尽前，角色可以任意移动和使用技能；但消耗的行动点数越多，下一次行动的到来就会变得越慢。仔细注意行动次序条，集中力量歼灭敌人吧。
+	  通过不同的主动技能和被动技能的搭配，同一位队友可以以完全不同的定位出场。
+	  通过完美破关、章间休息的活动、完成支线以及各种决断招募新的队友并提升与队友的默契度以获得各种好处。
+	  在帛国境内四处活动、收集数十种宝物来强化己方角色。重要物品可能会影响结局走向哟。
+	  </Typography>	  
+
+### <i className="fa-duotone fa-address-card"></i> 关于万衍世界	  
+	
+<Typography variant="subtitle2" gutterBottom component="div">
+		  在万衍大陆，一个传国数千年的分封制国家“万衍国”在享用了长久的和平后还是不可避免地走到了分崩离析的边缘。宗主国——万衍威权从八百年前就逐渐衰落，各个分封国之间互相征伐，战火吞灭了不计其数的国家和生命。
+		  传统军事强国——戮，百年间不断兼并周围国家，现在已是万衍境内首屈一指的强大势力。新近成立的七国联盟则在盟主洪国的领导下与戮国对立，并极尽所能拉拢更多的国家加入联盟。两大势力的夹缝中则是游戏的主要舞台——帛国。
+		  帛国于十一年前被戮国突袭攻灭，国王奎于王宫——宛央宫中举火殉国，大王子荒朱携三王子出奔南方的洪国。此后旧帛国领便为戮国占据。十一年后，为光复国家，大王子荒朱趁占领军松懈不备领大军杀回旧帛国领地，战争和死亡的阴影再次笼罩在东海之滨。多方势力也各怀鬼胎不约而至，这一场复国战争也许只是一系列混乱的开始……
+	  </Typography>	
+
+## <i className="fa-duotone fa-crow"></i> 众筹	   
+
+<Typography variant="subtitle2" gutterBottom component="div">
+	  2021年2月7日，作者 亚罗神虎在哔哩哔哩发布众筹宣传视频，游戏在摩点网开始众筹，三分钟达成5w的最低目标。
+	  截止2021年3月12日众筹结束，摩点网众筹到204,511元人民币，支持人数803人，超出预期的目标金额50,000元人民币的409.02%。
+	  </Typography>	
+
+## <i className="fa-duotone fa-solar-system"></i> 系统需求
+
+<Alert sx={{display: 'flex', flexDirection: { xs: 'column', md: 'row' }, borderRadius: '12px'}} variant="filled" severity="warning">
+  <AlertTitle>最低配置:</AlertTitle>
+  操作系统: Windows 7及以上
+  内存: 4 GB RAM
+  存储空间: 需要 3 GB 可用空间
+</Alert>
+<Alert sx={{display: 'flex', flexDirection: { xs: 'column', md: 'row' }, borderRadius: '12px'}} variant="filled" severity="error">
+  存在轻度的流血、战损描写以及同性向的裸露。
+</Alert>
+
+## <i className="fa-duotone fa-address-card"></i> 下载方式
+
+<Typography variant="subtitle2" gutterBottom component="div">
+	  《履云录》AVG版（只有前三章，已停止制作，详情请上官方微博查看）
+	  </Typography>	  
+<button
+        href="https://pan.baidu.com/s/1jHJnUF8"
+        type="button"
+        className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      >
+        <i class="fa-duotone fa-paw"></i>
+        百度网盘
+      </button>	  
+
+
+## <i className="fa-duotone fa-face-smile-relaxed"></i> 相关链接
+
+<Card variant="outlined" sx={{ minWidth: '320px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
+	  <Avatar
+	                alt="Elysium Above"
+	                src="https://s2.loli.net/2022/04/23/ZSr6uBqFbVExHwf.png"
+	              />
+		<div>		  
+        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
+          Elysium Above
+        </Typography>
+        <Typography variant="body2">The official account of the indie game Elysium Above. Creator: 
+@Ainro
+.
+Your supports and comments are highly appreciated.</Typography>
+</div>
+      </Box>
+	  <Link to="https://twitter.com/elysiumabovee">
+      <IconButton
+        aria-label="bookmark Bahamas Islands"
+        variant="plain"
+        color="neutral"
+        size="sm"
+        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
+      >
+          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/azk-x4.webp"/>
+		  </IconButton>
+		  </Link>
+
+<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
+        <img
+          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://twitter.com/elysiumabovee"
+          alt=""
+        />
+      </AspectRatio>
+      <Box sx={{ display: 'flex' }}>
+        <Button
+          variant="solid"
+          size="sm"
+          color="primary"
+          aria-label="Explore Bahamas Islands"
+          sx={{ ml: 'auto', fontWeight: 600 }}
+		  href="https://twitter.com/elysiumabovee"
+        >
+          查看
+        </Button>
+      </Box>
+</Card>
+<Card variant="outlined" sx={{ minWidth: '320px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
+	  <Avatar
+	                alt="Elysium Above"
+	                src="https://s3.bmp.ovh/imgs/2022/04/23/a9803655b08c852a.png"
+	              />
+		<div>		  
+        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
+          亚罗神虎
+        </Typography>
+        <Typography variant="body2">独立原创战棋游戏《履云录》：战国乱世的冒险群像剧</Typography>
+</div>
+      </Box>
+	  <Link to="https://zhongchou.modian.com/item/99058.html">
+      <IconButton
+        aria-label="bookmark Bahamas Islands"
+        variant="plain"
+        color="neutral"
+        size="sm"
+        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
+      >
+          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/bwp-x4.webp"/>
+        </IconButton>
+        </Link>
+
+<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
+        <img
+          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://zhongchou.modian.com/item/99058.html"
+          alt=""
+        />
+      </AspectRatio>
+      <Box sx={{ display: 'flex' }}>
+        <Button
+          variant="solid"
+          size="sm"
+          color="primary"
+          aria-label="Explore Bahamas Islands"
+          sx={{ ml: 'auto', fontWeight: 600 }}
+		  href="https://zhongchou.modian.com/item/99058.html"
+        >
+          查看
+        </Button>
+      </Box>
+</Card>
+<Card variant="outlined" sx={{ minWidth: '320px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
+	  <Avatar
+	                alt="Elysium Above"
+	                src="https://s2.loli.net/2022/04/23/hs1EbKtlYx93qSz.png"
+	              />
+		<div>		  
+        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
+          履云录
+        </Typography>
+        <Typography variant="body2">原创独立战棋类策略角色扮演游戏《履(lǚ)云录》官方微博</Typography>
+</div>
+      </Box>
+	  <Link to="https://weibo.com/u/5943309927">
+      <IconButton
+        aria-label="bookmark Bahamas Islands"
+        variant="plain"
+        color="neutral"
+        size="sm"
+        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
+      >
+          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/fye-x4.webp"/>
+        </IconButton>
+	  </Link>
+
+<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
+        <img
+          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://weibo.com/u/5943309927"
+          alt=""
+        />
+      </AspectRatio>
+      <Box sx={{ display: 'flex' }}>
+        <Button
+          variant="solid"
+          size="sm"
+          color="primary"
+          aria-label="Explore Bahamas Islands"
+          sx={{ ml: 'auto', fontWeight: 600 }}
+		  href="https://weibo.com/u/5943309927"
+        >
+          查看
+        </Button>
+      </Box>
+</Card>
+<Card variant="outlined" sx={{ minWidth: '320px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
+	  <Avatar
+	                alt="Elysium Above"
+	                src="https://s2.loli.net/2022/04/23/hs1EbKtlYx93qSz.png"
+	              />
+		<div>		  
+        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
+          履云录
+        </Typography>
+        <Typography variant="body2">履云录 台灣地區推廣粉絲專業</Typography>
+</div>
+      </Box>
+	  <Link to="https://www.facebook.com/lvyunluTW/">
+      <IconButton
+        aria-label="bookmark Bahamas Islands"
+        variant="plain"
+        color="neutral"
+        size="sm"
+        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
+      >
+          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/twq-x4.webp"/>
+        </IconButton>
+	  </Link>
+
+<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
+        <img
+          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://www.facebook.com/lvyunluTW/"
+          alt=""
+        />
+      </AspectRatio>
+      <Box sx={{ display: 'flex' }}>
+        <Button
+          variant="solid"
+          size="sm"
+          color="primary"
+          aria-label="Explore Bahamas Islands"
+          sx={{ ml: 'auto', fontWeight: 600 }}
+		  href="https://www.facebook.com/lvyunluTW/"
+        >
+          查看
+        </Button>
+      </Box>
+</Card>
+<Card variant="outlined" sx={{ minWidth: '320px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
+	  <Avatar
+	                alt="Elysium Above"
+	                src="https://imgsa.baidu.com/forum/pic/item/78310a55b319ebc416fc168f8426cffc1e17161b.jpg"
+	              />
+		<div>		  
+        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
+          履云录吧
+        </Typography>
+		<Typography variant="body2">关于avg游戏《履云录》的讨论</Typography>
+</div>
+      </Box>
+	  <Link to="https://tieba.baidu.com/f?kw=%E5%B1%A5%E4%BA%91%E5%BD%95">
+      <IconButton
+        aria-label="bookmark Bahamas Islands"
+        variant="plain"
+        color="neutral"
+        size="sm"
+        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
+      >
+          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/omd-x4.webp"/>
+        </IconButton>
+	  </Link>
+
+<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
+        <img
+          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://tieba.baidu.com/f?kw=%E5%B1%A5%E4%BA%91%E5%BD%95"
+          alt=""
+        />
+      </AspectRatio>
+      <Box sx={{ display: 'flex' }}>
+        <Button
+          variant="solid"
+          size="sm"
+          color="primary"
+          aria-label="Explore Bahamas Islands"
+          sx={{ ml: 'auto', fontWeight: 600 }}
+		  href="https://tieba.baidu.com/f?kw=%E5%B1%A5%E4%BA%91%E5%BD%95"
+        >
+          查看
+        </Button>
+      </Box>
+</Card>
+<Card variant="outlined" sx={{ minWidth: '320px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
+	  <Avatar
+	                alt="Elysium Above"
+	                src="https://s3.peing.net/t/uploads/user/icon/871869/eafc0f35.jpg"
+	              />
+		<div>		  
+        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
+          AinroQ
+        </Typography>
+</div>
+      </Box>
+	  <Link to="https://peing.net/en/ainro">
+      <IconButton
+        aria-label="bookmark Bahamas Islands"
+        variant="plain"
+        color="neutral"
+        size="sm"
+        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
+      >
+          <img style={{width: '24px'}} src="https://s3.peing.net/t/packs/header_logo-0fc157ae79ee6c264ca183928171e56b.png"/>
+        </IconButton>
+	  </Link>
+
+<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
+        <img
+          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://peing.net/en/ainro"
+          alt=""
+        />
+      </AspectRatio>
+      <Box sx={{ display: 'flex' }}>
+        <Button
+          variant="solid"
+          size="sm"
+          color="primary"
+          aria-label="Explore Bahamas Islands"
+          sx={{ ml: 'auto', fontWeight: 600 }}
+		  href="https://peing.net/en/ainro"
+        >
+          查看
+        </Button>
+      </Box>
+</Card>
+<Card variant="outlined" sx={{ minWidth: '320px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
+	  <Avatar
+	                alt="Elysium Above"
+	                src="https://imglf6.lf127.net/img/S3k0VnZaQnk5YlExWHdqZTVlcXJ3c0tWcTVTSmlXSjJrMGxtYkhEZlgxV2ZOY1VjMjdjaEJRPT0.jpg?imageView&thumbnail=96x96&quality=90&type=jpg"
+	              />
+		<div>		  
+        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
+          亚罗猫猫猫猫虎
+        </Typography>
+		<Typography variant="body2">是Project ∞的制作日志，会在这里发布各种制作进度，关于角色和剧情的小小闲聊以及回答各种问题。欢迎欢迎。</Typography>
+</div>
+      </Box>
+	  <Link to="https://ainroq.lofter.com/">
+      <IconButton
+        aria-label="bookmark Bahamas Islands"
+        variant="plain"
+        color="neutral"
+        size="sm"
+        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
+      >
+          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/gyf-x4.webp"/>
+        </IconButton>
+	  </Link>
+
+<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
+        <img
+          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://ainroq.lofter.com/"
+          alt=""
+        />
+      </AspectRatio>
+      <Box sx={{ display: 'flex' }}>
+        <Button
+          variant="solid"
+          size="sm"
+          color="primary"
+          aria-label="Explore Bahamas Islands"
+          sx={{ ml: 'auto', fontWeight: 600 }}
+		  href="https://ainroq.lofter.com/"
+        >
+          查看
+        </Button>
+      </Box>
+</Card>
+<Card variant="outlined" sx={{ minWidth: '320px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
+	  <Avatar
+	                alt="Elysium Above"
+	                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1509450/header_schinese.jpg?t=1628037692"
+	              />
+		<div>		  
+        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
+          Elysium Above 履云录
+        </Typography>
+		<Typography variant="body2">分封制王国“万衍”王权渐衰，各封国间烽烟四起。东海边小国“帛”十一年前被北方大国“戮”所灭。十一年后，帛故都宛央城郊，帛太子荒朱带领援军前来，准备夺回家国。 战棋游戏《履云录》中，玩家将作为指挥官，与八位主角一起见证东海各国的兴衰。</Typography>
+</div>
+      </Box>
+	  <Link to="https://store.steampowered.com/app/1509450/Elysium_Above/">
+      <IconButton
+        aria-label="bookmark Bahamas Islands"
+        variant="plain"
+        color="neutral"
+        size="sm"
+        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
+      >
+          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/rld-x4.webp"/>
+        </IconButton>
+	  </Link>
+
+<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
+        <img
+          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://store.steampowered.com/app/1509450/Elysium_Above/"
+          alt=""
+        />
+      </AspectRatio>
+      <Box sx={{ display: 'flex' }}>
+        <Button
+          variant="solid"
+          size="sm"
+          color="primary"
+          aria-label="Explore Bahamas Islands"
+          sx={{ ml: 'auto', fontWeight: 600 }}
+		  href="https://store.steampowered.com/app/1509450/Elysium_Above/"
+        >
+          查看
+        </Button>
+      </Box>
+</Card>						
+
+## <i className="fa-duotone fa-sunrise"></i> 周边
+
+<div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd2.alicdn.com/imgextra/i3/2206512564927/O1CN01l9H3Hc1mGc7XNHNCT_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》消云主题纯棉篮球袜
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥18.00-28.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=607115630280">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>
+  <div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd3.alicdn.com/imgextra/i3/2206512564927/O1CN011mSpO11mGc7d8JScO_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》消云将军主题抱枕套不含枕芯
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥198.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=655083340149">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>
+ <div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd2.alicdn.com/imgextra/i4/2206512564927/O1CN01CCye9S1mGc7egnXlf_!!2206512564927.png" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》主题书签
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥28.00-48.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=655090164968">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div> 
+  <div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd2.alicdn.com/imgextra/i2/2206512564927/O1CN01fzlaCk1mGc7bHp5aa_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》正太组主题鼠标垫
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥28.00-48.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=655140077238">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div> 
+   <div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd4.alicdn.com/imgextra/i3/2206512564927/O1CN01si3q0M1mGc7fL984t_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》油画布海报挂轴
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥48.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=655520202304">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>  
+<div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd4.alicdn.com/imgextra/i2/2206512564927/O1CN0165bIXx1mGc7bhIo1M_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》东玄主题系头带
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥48.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=655533397399">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>   
+<div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd2.alicdn.com/imgextra/i2/2206512564927/O1CN01BMxSyq1mGc7d9DFUy_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》角色金属徽章
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥18.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=655533885432">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>  
+<div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd4.alicdn.com/imgextra/i2/2206512564927/O1CN01KubBgB1mGc7TA9dE8_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》正太组主题马克杯
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥50.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=655905067513">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>    
+<div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd3.alicdn.com/imgextra/i3/2206512564927/O1CN01NNEnX21mGc7XMyyO4_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》主题立牌
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥60.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=655906639205">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>    
+ <div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd3.alicdn.com/imgextra/i1/2206512564927/O1CN01F7bBKC1mGc7lAUCTK_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》主题文件夹3个
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥18.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=656091658391">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>  
+<div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd1.alicdn.com/imgextra/i3/2206512564927/O1CN01OfH17X1mGc7irq7fJ_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》消云主题兜裆布
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥78.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=656299919142">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>  
+<div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd3.alicdn.com/imgextra/i1/2206512564927/O1CN01PA2n7T1mGc7cEzE0Q_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              《履云录》冰箱贴
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥68.00-118.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=656300183036">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>   
+<div class="flex text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:max-w-4xl">
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:items-center lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="https://gd1.alicdn.com/imgextra/i4/2206512564927/O1CN01roivSk1mGcBds4f78_!!2206512564927.jpg" class="object-center object-cover"/>
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-xl font-medium text-gray-900 sm:pr-12">
+              履云录贴纸
+            </h2>
+            <section aria-labelledby="information-heading" class="mt-1">
+              <div class="flex items-center mt-2.5 mb-5">
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Second star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Third star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fourth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+	            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+	        </div>
+          <div>
+				<i class="fa-duotone fa-truck-fast"></i> 快递 ¥10.00-30.00
+			</div>
+			<div>	
+				<i class="fa-duotone fa-truck-clock"></i> 付款后7天内发货
+			</div>
+              <p class="font-medium text-gray-900">
+                ¥8.00-12.00
+              </p>
+              <Link to="https://item.taobao.com/item.htm?id=679538798917">
+              <button class="mt-8 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">购买</button>
+              </Link>
+             </section>
+          </div>
+        </div>
+    </div>			
+	</div>  
+ 
+<div id="waline"></div>
