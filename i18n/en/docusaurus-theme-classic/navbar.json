@@ -5,7 +5,7 @@
   },
   "item.label.游戏": {
     "message": "Game",
-    "description": "Navbar item with label Game"
+    "description": "Navbar item with label 游戏"
   },
   "item.label.Telegram": {
     "message": "Telegram",
@@ -14,5 +14,9 @@
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
+  },
+  "item.label.友链": {
+    "message": "Friend Link",
+    "description": "Navbar item with label 友链"
   }
 }

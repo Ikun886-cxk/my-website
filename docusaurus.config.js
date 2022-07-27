@@ -80,6 +80,7 @@ const config = {
             position: 'right',
           },
             {to: '/docs/game', label: '游戏', position: 'left'},
+            {to: '/friends', label: '友链', position: 'right'},
             {
               href: 'https://t.me/+frQMWqK0suc0OGZl',
               className: 'header-Telegram-link',
@@ -163,6 +164,34 @@ const config = {
 	        },
 	      };
 	    },
+      [
+        '@docusaurus/plugin-pwa',
+        {
+          debug: true,
+          offlineModeActivationStrategies: [
+            'appInstalled',
+            'standalone',
+            'queryString',
+          ],
+          pwaHead: [
+            {
+              tagName: 'link',
+              rel: 'icon',
+              href: '/img/docusaurus.png',
+            },
+            {
+              tagName: 'link',
+              rel: 'manifest',
+              href: '/manifest.json', // 你的 PWA Manifest
+            },
+            {
+              tagName: 'meta',
+              name: 'theme-color',
+              content: 'rgb(37, 194, 160)',
+            },
+          ],
+        },
+      ],
 	  ],
 };
 

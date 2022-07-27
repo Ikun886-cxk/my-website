@@ -264,5 +264,29 @@
   "theme.docs.sidebar.expandButtonAriaLabel": {
     "message": "Expand sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "战棋游戏《履云s录》中，玩家将作为指挥官，与八位主角一起见证东海各国的兴衰。": {
+    "message": "In the wargame 'Elysium Above', players will act as commanders and witness the rise and fall of the East China Sea countries together with the eight main characters."
+  },
+  "友情链接": {
+    "message": "Links"
+  },
+  "申请友链请点击下方申请，熟人可直接找我~": {
+    "message": "To apply for a friend link, please click below to apply, acquaintances can find me directly ~"
+  },
+  "showcase.header.button": {
+    "message": "🙏 Add Friend Link"
+  },
+  "theme.PwaReloadPopup.info": {
+    "message": "New version available",
+    "description": "The text for PWA reload popup"
+  },
+  "theme.PwaReloadPopup.refreshButtonText": {
+    "message": "Refresh",
+    "description": "The text for PWA reload button"
+  },
+  "theme.PwaReloadPopup.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of PWA reload popup"
   }
 }
