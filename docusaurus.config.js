@@ -195,14 +195,5 @@ const config = {
 	  ],
 };
 
-module.exports = {
-  themeConfig: {
-    colorMode: {
-      disableSwitch: true,
-      respectPrefersColorScheme: true,
-    },
-  },
-};
-
 module.exports = config;
 
