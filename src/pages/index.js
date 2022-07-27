@@ -7,8 +7,8 @@ import Translate from '@docusaurus/Translate';
 const posts = [
 	{
 	  title: <Translate>履云录</Translate>,
-	  href: '/docs/game/lvyunlu',
-	  category: { name: 'Game', href: '/docs/game/lvyunlu' },
+	  href: '/games/lvyunlu',
+	  category: { name: 'Game', href: '/games/lvyunlu' },
 	  description:
 		<Translate>战棋游戏《履云s录》中，玩家将作为指挥官，与八位主角一起见证东海各国的兴衰。</Translate>,
 	  imageUrl:
