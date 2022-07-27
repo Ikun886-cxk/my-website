@@ -27,7 +27,7 @@
  const DESCRIPTION = translate({
   message: '申请友链请点击下方申请，熟人可直接找我~',
 });
- const GITHUB_URL = 'https://github.com/kuizuo'
+ const GITHUB_URL = 'https://github.com/SurpriseLon/my-website/issues'
  
  type FriendState = {
    scrollTopPosition: number
