@@ -158,6 +158,19 @@ const config = {
 	      };
 	    },
       [
+        "@docusaurus/plugin-content-docs",
+        {
+          id: "games",
+          path: "games",
+          routeBasePath: "games",
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/SurpriseLon/my-website/tree/master/",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          breadcrumbs: false,
+        },
+      ],
+      [
         '@docusaurus/plugin-pwa',
         {
           debug: true,
