@@ -81,7 +81,7 @@ const config = {
               position: 'right',
             },
         {
-              href: 'https://github.com/SurpriseLon/docs',
+              href: 'https://github.com/SurpriseLon/my-website/',
               className: 'header-github-link',
               'aria-label': 'GitHub',
               position: 'right',
@@ -118,7 +118,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/SurpriseLon/docs',
+                href: 'https://github.com/SurpriseLon/my-website/',
               },
             ],
           },
