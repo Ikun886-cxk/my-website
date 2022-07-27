@@ -61,7 +61,9 @@
     "remark-git-contributors": "^4.0.1",
     "remark-github": "^11.2.4",
     "remark-hint": "^1.0.10",
-    "remark-images": "^3.1.0"
+    "remark-images": "^3.1.0",
+    "trim": ">=0.0.3",
+    "got": ">=11.8.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.0.0-rc.1",
