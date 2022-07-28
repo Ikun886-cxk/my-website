@@ -71,7 +71,7 @@ const config = {
             type: 'localeDropdown',
             position: 'right',
           },
-            {to: '/games', label: '游戏', position: 'left'},
+            {to: '/category/games', label: '游戏', position: 'left'},
             {to: '/friends', label: '友链', position: 'right'},
             {
               href: 'https://t.me/+frQMWqK0suc0OGZl',
@@ -95,7 +95,7 @@ const config = {
             items: [
               {
                 label: '游戏',
-                to: '/games',
+                to: '/category/games',
               },
             ],
           },
