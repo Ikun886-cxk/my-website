@@ -72,6 +72,7 @@ const config = {
             position: 'right',
           },
             {to: '/category/games', label: '游戏', position: 'left'},
+            {to: '/category/study', label: '游戏', position: 'left'},
             {to: '/friends', label: '友链', position: 'right'},
             {
               href: 'https://t.me/+frQMWqK0suc0OGZl',
