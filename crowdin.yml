@@ -1,0 +1,10 @@
+project_id: '529504'
+api_token: a867d727c59b522c1ccf50f477a2c9409c391fe94e46ca6ac5a2d06866bc8b56ec93c505e0376ccc
+preserve_hierarchy: true
+files:
+  # JSON 翻译文件
+  - source: /i18n/en/**/*
+    translation: /i18n/%two_letters_code%/**/%original_file_name%
+  # Markdown 文档文件 
+  - source: /docs/**/*
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%

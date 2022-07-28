@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "DragonJayのwiki",
+    "description": "The title in the navbar"
+  },
+  "item.label.游戏": {
+    "message": "游戏",
+    "description": "Navbar item with label 游戏"
+  },
+  "item.label.友链": {
+    "message": "友链",
+    "description": "Navbar item with label 友链"
+  }
+}

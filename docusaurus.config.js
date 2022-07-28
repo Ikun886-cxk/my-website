@@ -1,6 +1,6 @@
 // @ts-check
 const path = require('path')
-const announcementBarContent = `基于 <a href='https://v3.nuxtjs.org/'>Nuxt3</a> 实现 <a href='https://api.kuizuo.cn'>KZ API</a> 接口站点`
+const announcementBarContent = `⭐️ If you like this wiki,just like this 😂`
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
@@ -39,9 +39,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/SurpriseLon/my-website/tree/master/',
         },
@@ -125,6 +124,10 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} DragonJay's wiki, Inc.`,
       },
+      announcementBar: {
+        id: 'announcementBar-3',
+        content: announcementBarContent,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
@@ -157,19 +160,6 @@ const config = {
 	        },
 	      };
 	    },
-      [
-        "@docusaurus/plugin-content-docs",
-        {
-          id: "games",
-          path: "games",
-          routeBasePath: "games",
-          sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/SurpriseLon/my-website/tree/master/",
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
-          breadcrumbs: false,
-        },
-      ],
       [
         '@docusaurus/plugin-pwa',
         {
