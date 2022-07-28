@@ -12,7 +12,7 @@ const posts = [
 	  description:
 		<Translate>战棋游戏《履云录》中，玩家将作为指挥官，与八位主角一起见证东海各国的兴衰。</Translate>,
 	  imageUrl:
-		'https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/Lvyunlu-x4.webp',
+		'https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/Lvyunlu.webp',
 	},
 ]	
 
