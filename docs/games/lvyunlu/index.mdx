@@ -4,24 +4,19 @@ id: lvyunlu
 sidebar_position: 2
 slug: ../lvyunlu
 ---
-import Alert from '@mui/material/Alert';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
-import AspectRatio from '@mui/joy/AspectRatio';
-import Box from '@mui/joy/Box';
-import Button from '@mui/material/Button';
-import Card from '@mui/joy/Card';
-import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar';
-import CardCover from '@mui/joy/CardCover';
 import { Fancybox as NativeFancybox } from "@fancyapps/ui/dist/fancybox.esm.js";
 import "@fancyapps/ui/dist/fancybox.css";
+import Admonition from '@theme/Admonition';
 
 <head>
 <script src="https://fastly.jsdelivr.net/gh/SurpriseLon/Fontawesome-6@main/js/all.js" async=""></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+<script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 <script src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/common.js"></script>
   <link
     rel="stylesheet"
@@ -30,25 +25,21 @@ import "@fancyapps/ui/dist/fancybox.css";
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8434505608196685"
      crossorigin="anonymous"></script>
 </head>
-<div class="flex p-4 mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800" role="alert">
-  <i aria-hidden="true" class="fa-duotone fa-pause inline flex-shrink-0 mr-3 w-5 h-5" ></i>
-  <span class="sr-only">Info</span>
-  <div>
-    <span class="font-medium">作者现在正在重新开发战棋版游戏，并预期在steam上发行。</span>
-  </div>
-</div>
+<Admonition type="caution" icon={<i class="fa-duotone fa-pause"></i>}>
+  <p>
+    作者现在正在重新开发战棋版游戏，并预期在steam上发行。
+  </p>
+</Admonition>
 <div class="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
   <Fancybox data-fancybox data-src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/Lvyunlu-x4.webp">
   <img class="rounded-t-lg" src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/Lvyunlu.webp" alt="" />
 </Fancybox>
 </div>
-<div class="flex p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
-  <svg aria-hidden="true" class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"></path></svg>
-  <span class="sr-only">Info</span>
-  <div>
-    <span class="font-medium">点一下图片的略缩图可以调出原图哦！</span>
-  </div>
-</div>
+<Admonition type="tip">
+  <p>
+    点一下图片的略缩图可以调出原图哦！
+  </p>
+</Admonition>
 <iframe src="//player.bilibili.com/player.html?aid=331111911&bvid=BV1MA411H73z&cid=279521166&page=1&high_quality=1&danmaku=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="allowFullScreen" width="100%" height="500" scrolling="no" class="relative mx-auto mt-12 w-full max-w-4xl rounded-3xl border border-gray-300 shadow-2xl lg:mt-20 dark:border-gray-700 yt-video aspect-video"> </iframe> 
 <Typography variant="subtitle1" gutterBottom component="div">《履lǚ云录》（Elysium Above）是由《履云录》制作组（现叫Sweet Potato Studio）制作的一款AVG游戏，作者为亚罗神虎。AVG版本现已出至第三章。AVG版本现已作为废案，不再更新。
 作者现在正在重新开发战棋版游戏，并预期在steam上发行。</Typography>
@@ -93,15 +84,16 @@ import "@fancyapps/ui/dist/fancybox.css";
 
 ## <i className="fa-duotone fa-solar-system"></i> 系统需求
 
-<Alert sx={{display: 'flex', flexDirection: { xs: 'column', md: 'row' }, borderRadius: '12px'}} variant="filled" severity="warning">
-  <AlertTitle>最低配置:</AlertTitle>
-  操作系统: Windows 7及以上
-  内存: 4 GB RAM
-  存储空间: 需要 3 GB 可用空间
-</Alert>
-<Alert sx={{display: 'flex', flexDirection: { xs: 'column', md: 'row' }, borderRadius: '12px'}} variant="filled" severity="error">
-  存在轻度的流血、战损描写以及同性向的裸露。
-</Alert>
+<p>最低配置:
+</p>
+<ul><li>操作系统: Windows 7及以上</li>
+<li>内存: 4 GB RAM</li>
+<li>存储空间: 需要 3 GB 可用空间</li></ul>
+<Admonition type="danger">
+  <p>
+    存在轻度的流血、战损描写以及同性向的裸露。
+  </p>
+</Admonition>
 
 ## <i className="fa-duotone fa-address-card"></i> 下载方式
 
@@ -120,360 +112,184 @@ import "@fancyapps/ui/dist/fancybox.css";
 
 ## <i className="fa-duotone fa-face-smile-relaxed"></i> 相关链接
 
-<Card variant="outlined" sx={{ minWidth: '320px' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-	  <Avatar
-	                alt="Elysium Above"
-	                src="https://s2.loli.net/2022/04/23/ZSr6uBqFbVExHwf.png"
-	              />
-		<div>		  
-        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
-          Elysium Above
-        </Typography>
-        <Typography variant="body2">The official account of the indie game Elysium Above. Creator: 
+<div class="max-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+<div class="grid grid-flow-col">
+<div class="flex items-center space-x-4">
+    <img class="w-10 h-10 rounded-full" style={{width: 40}} src="https://s2.loli.net/2022/04/23/ZSr6uBqFbVExHwf.png" />
+    <div class="font-medium dark:text-white">
+        <div>Elysium Above</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">The official account of the indie game Elysium Above. Creator: 
 @Ainro
 .
-Your supports and comments are highly appreciated.</Typography>
+Your supports and comments are highly appreciated.</div>
+    </div>
 </div>
-      </Box>
-	  <Link to="https://twitter.com/elysiumabovee">
-      <IconButton
-        aria-label="bookmark Bahamas Islands"
-        variant="plain"
-        color="neutral"
-        size="sm"
-        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
-      >
-          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/azk-x4.webp"/>
-		  </IconButton>
-		  </Link>
-
-<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
-        <img
-          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://twitter.com/elysiumabovee"
-          alt=""
-        />
-      </AspectRatio>
-      <Box sx={{ display: 'flex' }}>
-        <Button
-          variant="solid"
-          size="sm"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', fontWeight: 600 }}
-		  href="https://twitter.com/elysiumabovee"
-        >
-          查看
-        </Button>
-      </Box>
-</Card>
-<Card variant="outlined" sx={{ minWidth: '320px' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-	  <Avatar
-	                alt="Elysium Above"
-	                src="https://s3.bmp.ovh/imgs/2022/04/23/a9803655b08c852a.png"
-	              />
-		<div>		  
-        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
-          亚罗神虎
-        </Typography>
-        <Typography variant="body2">独立原创战棋游戏《履云录》：战国乱世的冒险群像剧</Typography>
+<div class="flex justify-end px-4 pt-4 -mt-3">
+        <button  class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5">
+            <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/azk-x4.webp"/>
+        </button>
+    </div>
+    </div>
+    <Link to="https://twitter.com/elysiumabovee">
+        <img class="rounded-t-lg" src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://twitter.com/elysiumabovee" />
+    </Link>
+    <div class="px-5 pb-5 flex justify-end mt-3">
+            <Link to="https://twitter.com/elysiumabovee" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">查看</Link>
+        </div>
 </div>
-      </Box>
-	  <Link to="https://zhongchou.modian.com/item/99058.html">
-      <IconButton
-        aria-label="bookmark Bahamas Islands"
-        variant="plain"
-        color="neutral"
-        size="sm"
-        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
-      >
-          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/bwp-x4.webp"/>
-        </IconButton>
-        </Link>
-
-<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
-        <img
-          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://zhongchou.modian.com/item/99058.html"
-          alt=""
-        />
-      </AspectRatio>
-      <Box sx={{ display: 'flex' }}>
-        <Button
-          variant="solid"
-          size="sm"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', fontWeight: 600 }}
-		  href="https://zhongchou.modian.com/item/99058.html"
-        >
-          查看
-        </Button>
-      </Box>
-</Card>
-<Card variant="outlined" sx={{ minWidth: '320px' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-	  <Avatar
-	                alt="Elysium Above"
-	                src="https://s2.loli.net/2022/04/23/hs1EbKtlYx93qSz.png"
-	              />
-		<div>		  
-        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
-          履云录
-        </Typography>
-        <Typography variant="body2">原创独立战棋类策略角色扮演游戏《履(lǚ)云录》官方微博</Typography>
+<div class="max-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+<div class="grid grid-flow-col">
+<div class="flex items-center space-x-4">
+    <img class="w-10 h-10 rounded-full" style={{width: 40}} src="https://s3.bmp.ovh/imgs/2022/04/23/a9803655b08c852a.png" />
+    <div class="font-medium dark:text-white">
+        <div>亚罗神虎</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">独立原创战棋游戏《履云录》：战国乱世的冒险群像剧</div>
+    </div>
 </div>
-      </Box>
-	  <Link to="https://weibo.com/u/5943309927">
-      <IconButton
-        aria-label="bookmark Bahamas Islands"
-        variant="plain"
-        color="neutral"
-        size="sm"
-        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
-      >
-          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/fye-x4.webp"/>
-        </IconButton>
-	  </Link>
-
-<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
-        <img
-          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://weibo.com/u/5943309927"
-          alt=""
-        />
-      </AspectRatio>
-      <Box sx={{ display: 'flex' }}>
-        <Button
-          variant="solid"
-          size="sm"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', fontWeight: 600 }}
-		  href="https://weibo.com/u/5943309927"
-        >
-          查看
-        </Button>
-      </Box>
-</Card>
-<Card variant="outlined" sx={{ minWidth: '320px' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-	  <Avatar
-	                alt="Elysium Above"
-	                src="https://s2.loli.net/2022/04/23/hs1EbKtlYx93qSz.png"
-	              />
-		<div>		  
-        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
-          履云录
-        </Typography>
-        <Typography variant="body2">履云录 台灣地區推廣粉絲專業</Typography>
+<div class="flex justify-end px-4 pt-4 -mt-3">
+        <button  class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5">
+            <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/bwp-x4.webp"/>
+        </button>
+    </div>
+    </div>
+    <Link to="https://zhongchou.modian.com/item/99058.html">
+        <img class="rounded-t-lg" src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://zhongchou.modian.com/item/99058.html" />
+    </Link>
+    <div class="px-5 pb-5 flex justify-end mt-3">
+            <Link to="https://zhongchou.modian.com/item/99058.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">查看</Link>
+        </div>
 </div>
-      </Box>
-	  <Link to="https://www.facebook.com/lvyunluTW/">
-      <IconButton
-        aria-label="bookmark Bahamas Islands"
-        variant="plain"
-        color="neutral"
-        size="sm"
-        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
-      >
-          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/twq-x4.webp"/>
-        </IconButton>
-	  </Link>
-
-<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
-        <img
-          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://www.facebook.com/lvyunluTW/"
-          alt=""
-        />
-      </AspectRatio>
-      <Box sx={{ display: 'flex' }}>
-        <Button
-          variant="solid"
-          size="sm"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', fontWeight: 600 }}
-		  href="https://www.facebook.com/lvyunluTW/"
-        >
-          查看
-        </Button>
-      </Box>
-</Card>
-<Card variant="outlined" sx={{ minWidth: '320px' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-	  <Avatar
-	                alt="Elysium Above"
-	                src="https://imgsa.baidu.com/forum/pic/item/78310a55b319ebc416fc168f8426cffc1e17161b.jpg"
-	              />
-		<div>		  
-        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
-          履云录吧
-        </Typography>
-		<Typography variant="body2">关于avg游戏《履云录》的讨论</Typography>
+<div class="max-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+<div class="grid grid-flow-col">
+<div class="flex items-center space-x-4">
+    <img class="w-10 h-10 rounded-full" style={{width: 40}} src="https://s2.loli.net/2022/04/23/hs1EbKtlYx93qSz.png" />
+    <div class="font-medium dark:text-white">
+        <div>履云录</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">原创独立战棋类策略角色扮演游戏《履(lǚ)云录》官方微博</div>
+    </div>
 </div>
-      </Box>
-	  <Link to="https://tieba.baidu.com/f?kw=%E5%B1%A5%E4%BA%91%E5%BD%95">
-      <IconButton
-        aria-label="bookmark Bahamas Islands"
-        variant="plain"
-        color="neutral"
-        size="sm"
-        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
-      >
-          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/omd-x4.webp"/>
-        </IconButton>
-	  </Link>
-
-<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
-        <img
-          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://tieba.baidu.com/f?kw=%E5%B1%A5%E4%BA%91%E5%BD%95"
-          alt=""
-        />
-      </AspectRatio>
-      <Box sx={{ display: 'flex' }}>
-        <Button
-          variant="solid"
-          size="sm"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', fontWeight: 600 }}
-		  href="https://tieba.baidu.com/f?kw=%E5%B1%A5%E4%BA%91%E5%BD%95"
-        >
-          查看
-        </Button>
-      </Box>
-</Card>
-<Card variant="outlined" sx={{ minWidth: '320px' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-	  <Avatar
-	                alt="Elysium Above"
-	                src="https://s3.peing.net/t/uploads/user/icon/871869/eafc0f35.jpg"
-	              />
-		<div>		  
-        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
-          AinroQ
-        </Typography>
+<div class="flex justify-end px-4 pt-4 -mt-3">
+        <button  class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5">
+            <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/fye-x4.webp"/>
+        </button>
+    </div>
+    </div>
+    <Link to="https://weibo.com/u/5943309927">
+        <img class="rounded-t-lg" src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://weibo.com/u/5943309927" />
+    </Link>
+    <div class="px-5 pb-5 flex justify-end mt-3">
+            <Link to="https://weibo.com/u/5943309927" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">查看</Link>
+        </div>
 </div>
-      </Box>
-	  <Link to="https://peing.net/en/ainro">
-      <IconButton
-        aria-label="bookmark Bahamas Islands"
-        variant="plain"
-        color="neutral"
-        size="sm"
-        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
-      >
-          <img style={{width: '24px'}} src="https://s3.peing.net/t/packs/header_logo-0fc157ae79ee6c264ca183928171e56b.png"/>
-        </IconButton>
-	  </Link>
-
-<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
-        <img
-          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://peing.net/en/ainro"
-          alt=""
-        />
-      </AspectRatio>
-      <Box sx={{ display: 'flex' }}>
-        <Button
-          variant="solid"
-          size="sm"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', fontWeight: 600 }}
-		  href="https://peing.net/en/ainro"
-        >
-          查看
-        </Button>
-      </Box>
-</Card>
-<Card variant="outlined" sx={{ minWidth: '320px' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-	  <Avatar
-	                alt="Elysium Above"
-	                src="https://imglf6.lf127.net/img/S3k0VnZaQnk5YlExWHdqZTVlcXJ3c0tWcTVTSmlXSjJrMGxtYkhEZlgxV2ZOY1VjMjdjaEJRPT0.jpg?imageView&thumbnail=96x96&quality=90&type=jpg"
-	              />
-		<div>		  
-        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
-          亚罗猫猫猫猫虎
-        </Typography>
-		<Typography variant="body2">是Project ∞的制作日志，会在这里发布各种制作进度，关于角色和剧情的小小闲聊以及回答各种问题。欢迎欢迎。</Typography>
+<div class="max-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+<div class="grid grid-flow-col">
+<div class="flex items-center space-x-4">
+    <img class="w-10 h-10 rounded-full" style={{width: 40}} src="https://s2.loli.net/2022/04/23/hs1EbKtlYx93qSz.png" />
+    <div class="font-medium dark:text-white">
+        <div>履云录</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">履云录 台灣地區推廣粉絲專業</div>
+    </div>
 </div>
-      </Box>
-	  <Link to="https://ainroq.lofter.com/">
-      <IconButton
-        aria-label="bookmark Bahamas Islands"
-        variant="plain"
-        color="neutral"
-        size="sm"
-        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
-      >
-          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/gyf-x4.webp"/>
-        </IconButton>
-	  </Link>
-
-<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
-        <img
-          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://ainroq.lofter.com/"
-          alt=""
-        />
-      </AspectRatio>
-      <Box sx={{ display: 'flex' }}>
-        <Button
-          variant="solid"
-          size="sm"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', fontWeight: 600 }}
-		  href="https://ainroq.lofter.com/"
-        >
-          查看
-        </Button>
-      </Box>
-</Card>
-<Card variant="outlined" sx={{ minWidth: '320px' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-	  <Avatar
-	                alt="Elysium Above"
-	                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1509450/header_schinese.jpg?t=1628037692"
-	              />
-		<div>		  
-        <Typography variant="subtitle2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
-          Elysium Above 履云录
-        </Typography>
-		<Typography variant="body2">分封制王国“万衍”王权渐衰，各封国间烽烟四起。东海边小国“帛”十一年前被北方大国“戮”所灭。十一年后，帛故都宛央城郊，帛太子荒朱带领援军前来，准备夺回家国。 战棋游戏《履云录》中，玩家将作为指挥官，与八位主角一起见证东海各国的兴衰。</Typography>
+<div class="flex justify-end px-4 pt-4 -mt-3">
+        <button  class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5">
+            <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/twq-x4.webp"/>
+        </button>
+    </div>
+    </div>
+    <Link to="https://www.facebook.com/lvyunluTW/">
+        <img class="rounded-t-lg" src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://www.facebook.com/lvyunluTW/" />
+    </Link>
+    <div class="px-5 pb-5 flex justify-end mt-3">
+            <Link to="https://www.facebook.com/lvyunluTW/" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">查看</Link>
+        </div>
 </div>
-      </Box>
-	  <Link to="https://store.steampowered.com/app/1509450/Elysium_Above/">
-      <IconButton
-        aria-label="bookmark Bahamas Islands"
-        variant="plain"
-        color="neutral"
-        size="sm"
-        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
-      >
-          <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/rld-x4.webp"/>
-        </IconButton>
-	  </Link>
-
-<AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
-        <img
-          src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://store.steampowered.com/app/1509450/Elysium_Above/"
-          alt=""
-        />
-      </AspectRatio>
-      <Box sx={{ display: 'flex' }}>
-        <Button
-          variant="solid"
-          size="sm"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', fontWeight: 600 }}
-		  href="https://store.steampowered.com/app/1509450/Elysium_Above/"
-        >
-          查看
-        </Button>
-      </Box>
-</Card>						
+<div class="max-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+<div class="grid grid-flow-col">
+<div class="flex items-center space-x-4">
+    <img class="w-10 h-10 rounded-full" style={{width: 40}} src="https://imgsa.baidu.com/forum/pic/item/78310a55b319ebc416fc168f8426cffc1e17161b.jpg" />
+    <div class="font-medium dark:text-white">
+        <div>履云录吧</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">关于avg游戏《履云录》的讨论</div>
+    </div>
+</div>
+<div class="flex justify-end px-4 pt-4 -mt-3">
+        <button  class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5">
+            <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/omd-x4.webp"/>
+        </button>
+    </div>
+    </div>
+    <Link to="https://tieba.baidu.com/f?kw=%E5%B1%A5%E4%BA%91%E5%BD%95">
+        <img class="rounded-t-lg" src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://tieba.baidu.com/f?kw=%E5%B1%A5%E4%BA%91%E5%BD%95" />
+    </Link>
+    <div class="px-5 pb-5 flex justify-end mt-3">
+            <Link to="https://tieba.baidu.com/f?kw=%E5%B1%A5%E4%BA%91%E5%BD%95" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">查看</Link>
+        </div>
+</div>
+<div class="max-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+<div class="grid grid-flow-col">
+<div class="flex items-center space-x-4">
+    <img class="w-10 h-10 rounded-full" style={{width: 40}} src="https://s3.peing.net/t/uploads/user/icon/871869/eafc0f35.jpg" />
+    <div class="font-medium dark:text-white">
+        <div>AinroQ</div>
+    </div>
+</div>
+<div class="flex justify-end px-4 pt-4 -mt-3">
+        <button  class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5">
+            <img style={{width: '24px'}} src="https://s3.peing.net/t/packs/header_logo-0fc157ae79ee6c264ca183928171e56b.png"/>
+        </button>
+    </div>
+    </div>
+    <Link to="https://peing.net/en/ainro">
+        <img class="rounded-t-lg" src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://peing.net/en/ainro" />
+    </Link>
+    <div class="px-5 pb-5 flex justify-end mt-3">
+            <Link to="https://peing.net/en/ainro" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">查看</Link>
+        </div>
+</div>
+<div class="max-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+<div class="grid grid-flow-col">
+<div class="flex items-center space-x-4">
+    <img class="w-10 h-10 rounded-full" style={{width: 40}} src="https://imglf6.lf127.net/img/S3k0VnZaQnk5YlExWHdqZTVlcXJ3c0tWcTVTSmlXSjJrMGxtYkhEZlgxV2ZOY1VjMjdjaEJRPT0.jpg?imageView&thumbnail=96x96&quality=90&type=jpg" />
+    <div class="font-medium dark:text-white">
+        <div>亚罗猫猫猫猫虎</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">是Project ∞的制作日志，会在这里发布各种制作进度，关于角色和剧情的小小闲聊以及回答各种问题。欢迎欢迎。</div>
+    </div>
+</div>
+<div class="flex justify-end px-4 pt-4 -mt-3">
+        <button  class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5">
+            <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/gyf-x4.webp"/>
+        </button>
+    </div>
+    </div>
+    <Link to="https://ainroq.lofter.com/">
+        <img class="rounded-t-lg" src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://ainroq.lofter.com/" />
+    </Link>
+    <div class="px-5 pb-5 flex justify-end mt-3">
+            <Link to="https://ainroq.lofter.com/" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">查看</Link>
+        </div>
+</div>
+<div class="max-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+<div class="grid grid-flow-col">
+<div class="flex items-center space-x-4">
+    <img class="w-10 h-10 rounded-full" style={{width: 40}} src="https://cdn.cloudflare.steamstatic.com/steam/apps/1509450/header_schinese.jpg?t=1628037692" />
+    <div class="font-medium dark:text-white">
+        <div>Elysium Above 履云录</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">分封制王国“万衍”王权渐衰，各封国间烽烟四起。东海边小国“帛”十一年前被北方大国“戮”所灭。十一年后，帛故都宛央城郊，帛太子荒朱带领援军前来，准备夺回家国。 战棋游戏《履云录》中，玩家将作为指挥官，与八位主角一起见证东海各国的兴衰。</div>
+    </div>
+</div>
+<div class="flex justify-end px-4 pt-4 -mt-3">
+        <button  class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5">
+            <img style={{width: '24px'}} src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/rld-x4.webp"/>
+        </button>
+    </div>
+    </div>
+    <Link to="https://store.steampowered.com/app/1509450/Elysium_Above/">
+        <img class="rounded-t-lg" src="https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://store.steampowered.com/app/1509450/Elysium_Above/" />
+    </Link>
+    <div class="px-5 pb-5 flex justify-end mt-3">
+            <Link to="https://store.steampowered.com/app/1509450/Elysium_Above/" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">查看</Link>
+        </div>
+</div>
 
 ## <i className="fa-duotone fa-sunrise"></i> 周边
 

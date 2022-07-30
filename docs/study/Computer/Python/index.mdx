@@ -1,0 +1,101 @@
+---
+title: Python
+id: Python
+slug: ../python
+---
+
+import Head from '@docusaurus/Head';
+import Link from '@docusaurus/Link';
+import Typography from '@mui/material/Typography';
+import Admonition from '@theme/Admonition';
+import { Fancybox as NativeFancybox } from "@fancyapps/ui/dist/fancybox.esm.js";
+import "@fancyapps/ui/dist/fancybox.css";
+
+<head>
+<script src="https://fastly.jsdelivr.net/gh/SurpriseLon/Fontawesome-6@main/js/all.js" async=""></script>
+<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+<script src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/common.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+<script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8434505608196685"
+     crossorigin="anonymous"></script>
+</head>
+
+<Typography variant="body1" gutterBottom>
+ <b>Python</b>是一种高级的、解释性的、通用的编程语言。它的设计理念强调代码的可读性，使用大量的缩进。
+ </Typography>
+
+<Typography variant="body1" gutterBottom>
+ Python是动态类型的，并且是垃圾收集的。它支持多种编程范式，包括结构化（特别是程序化）、面向对象和函数式编程。由于其全面的标准库，它经常被描述为一种 "包含电池 "的语言。
+ </Typography>
+
+<Typography variant="body1" gutterBottom>
+ Guido van Rossum在20世纪80年代末开始研究Python，作为ABC编程语言的后继者，并在1991年首次发布了Python 0.9.0。 Python 2.0在2000年发布，引入了一些新特性，如列表理解、循环检测垃圾收集、引用计数和Unicode支持。2008年发布的Python 3.0是一个重要的修订版，与早期版本不完全向后兼容。Python 2在2020年的2.7.18版本中停用。
+ </Typography>
+
+<Typography variant="body1" gutterBottom>
+ Python一直被列为最受欢迎的编程语言之一。
+ </Typography>
+
+ ## <i class="fa-duotone fa-rectangle-history"></i> 历史
+
+ <div class="thumb tright">
+ <div class="thumbinner" style={{ width: '152'}}>
+<div class="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+<Fancybox data-fancybox data-src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/Guido_van_Rossum_OSCON_2006_cropped-x4.webp">
+          <img class="rounded-t-lg" src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/Guido_van_Rossum_OSCON_2006_cropped.webp"/>
+</Fancybox>
+  </div> 
+ </div>
+ </div>
+
+<Typography variant="body1" gutterBottom>
+ Python是由荷兰Centrum Wiskunde & Informatica (CWI)的Guido van Rossum在20世纪80年代末构思的，作为ABC编程语言的后继者，它受到SETL的启发，能够处理异常并与Amoeba操作系统对接。  Van Rossum作为首席开发者独自承担了项目的责任，直到2018年7月12日，他宣布从Python的 "终身仁慈的独裁者 "的职责中 "永久休假"，这是Python社区赋予他的称号，以反映他作为项目首席决策者的长期承诺。  2019年1月，活跃的Python核心开发者选出一个五人指导委员会来领导该项目。
+ </Typography>
+
+<Typography variant="body1" gutterBottom>
+Python 2.0于2000年10月16日发布，有许多主要的新特性。 Python 3.0，于2008年12月3日发布，其许多主要特性被回传到Python 2.6.x 和 2.7.x。Python 3的发布包括<code>2to3</code>工具，它可以自动将Python 2代码翻译成Python 3。
+ </Typography>
+
+<Typography variant="body1" gutterBottom>
+Python 2.7 的生命周期最初定在 2015 年，后来由于担心大量的现有代码不容易向前移植到 Python 3，所以推迟到 2020 年。 不会再为它发布安全补丁或其他改进。后来，对3.6的支持也停止了。2021年，Python 3.9.2和3.8.8被加速淘汰，因为所有版本的Python（包括2.7）都有安全问题，可能导致远程代码执行和网络缓存中毒。
+ </Typography>
+
+<Typography variant="body1" gutterBottom>
+2022年，Python 3.10.4和3.9.12被加速发布，老版本也是如此，包括3.8.13和3.7.13，因为有很多安全问题。 Python 3.9.13是最新的3.9版本，从现在开始，3.9（以及更老的；3.8和3.7）将只获得安全更新。
+ </Typography>
+
+ ## <i class="fa-duotone fa-ball-pile"></i> 设计理念和特点
+
+<Typography variant="body1" gutterBottom>
+Python是一种多范式的编程语言。它完全支持面向对象的编程和结构化编程，而且它的许多功能都支持函数式编程和面向方面的编程（包括元编程和元对象[魔法方法]）。
+ </Typography>
+
+<Typography variant="body1" gutterBottom>
+Python使用动态类型和引用计数以及循环检测垃圾收集器的组合来进行内存管理。它使用动态名称解析（后期绑定），在程序执行过程中绑定方法和变量名称。
+ </Typography>
+
+<Typography variant="body1" gutterBottom>
+它的设计为Lisp传统中的函数式编程提供了一些支持。它有过滤器、地图和reduce函数；列表理解、字典、集合和生成器表达式。 标准库有两个模块（<code>itertools</code>和<code>functools</code>），实现了从Haskell和Standard ML借来的函数式工具。
+ </Typography>
+
+<Typography variant="body1" gutterBottom>
+它的核心理念在文件<i>The Zen of Python</i> (PEP 20)中得到了总结，其中包括一些箴言，如：
+ </Typography>
+
+<ul><li>美丽的比丑陋的好。</li>
+<li>明确的比隐含的好。</li>
+<li>简单比复杂好。</li>
+<li>复杂总比复杂好。</li>
+<li>可读性也很重要。</li></ul>
+
+<Typography variant="body1" gutterBottom>
+Python没有把所有的功能都放在它的核心中，而是被设计成可以通过模块进行高度扩展。这种紧凑的模块化使它作为向现有应用程序添加可编程接口的一种手段而特别受欢迎。Van Rossum对一种具有大型标准库和易于扩展的解释器的小型核心语言的设想源于他对ABC的挫败感，ABC支持相反的方法。
+ </Typography>
+
+ 

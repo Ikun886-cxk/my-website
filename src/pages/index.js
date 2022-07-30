@@ -1,8 +1,9 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import Auto from '@site/spaghetti';
 import Translate from '@docusaurus/Translate';
+import "tailwindcss/tailwind.css"
+
 
 const posts = [
 	{

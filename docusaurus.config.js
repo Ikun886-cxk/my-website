@@ -151,12 +151,16 @@ const config = {
 	 plugins: [
 	    async function myPlugin(context, options) {
 	      return {
-	        name: "docusaurus-tailwindcss",
-	        configurePostCss(postcssOptions) {
-	          // Appends TailwindCSS and AutoPrefixer.
-	          postcssOptions.plugins.push(require("tailwindcss"));
-	          postcssOptions.plugins.push(require("autoprefixer"));
-	          return postcssOptions;
+          name: 'postcss-tailwindcss-loader',
+          configurePostCss(postcssOptions) {
+              postcssOptions.plugins.push(
+                  require('postcss-import'),
+                  require('tailwindcss'),
+                  require('postcss-nested'),
+                  // @ts-ignore
+                  require('autoprefixer'),
+              )
+              return postcssOptions
 	        },
 	      };
 	    },
