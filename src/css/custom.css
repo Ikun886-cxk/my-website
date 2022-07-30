@@ -6,6 +6,30 @@
 
 /* You can override the default Infima variables here. */
 
+#wechat:checked ~ .tab-wechat {
+  @apply flex;
+}
+
+#wechat:checked ~ .nav label[for="wechat"] span {
+  @apply bg-gray-200;
+}
+
+#alipay:checked ~ .tab-alipay {
+  @apply flex;
+}
+
+#alipay:checked ~ .nav label[for="alipay"] span {
+  @apply bg-gray-200;
+}
+
+#coffee:checked ~ .tab-coffee {
+  @apply flex;
+}
+
+#coffee:checked ~ .nav label[for="coffee"] span {
+  @apply bg-gray-200;
+}
+
 * {
   word-break: break-all;
 }
