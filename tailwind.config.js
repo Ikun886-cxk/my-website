@@ -2,7 +2,7 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = {
   darkMode: 'class',	
-  content: ["./src/**/*.{js,jsx,ts,tsx}","./docs/**/*.mdx","./i18n/**/*.mdx"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}","./docs/**/*.mdx","./i18n/**/*.mdx","./node_modules/flowbite/**/*.js"],
   corePlugins: {
     preflight: false,
   },

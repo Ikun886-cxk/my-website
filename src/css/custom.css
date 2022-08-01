@@ -34,6 +34,14 @@
   @apply bg-gray-200;
 }
 
+#kofi:checked ~ .tab-kofi {
+  @apply flex;
+}
+
+#kofi:checked ~ .nav label[for="kofi"] span {
+  @apply bg-gray-200;
+}
+
 * {
   word-break: break-all;
 }

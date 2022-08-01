@@ -25,6 +25,7 @@ import Link from '@docusaurus/Link';
 <input type="radio" name="tab" id="wechat" class="hidden" checked/>
 <input type="radio" name="tab" id="alipay" class="hidden"/>
 <input type="radio" name="tab" id="coffee" class="hidden"/>
+<input type="radio" name="tab" id="kofi" class="hidden"/>
 
 <div class="my-4 nav">
 <label for="wechat">
@@ -35,6 +36,9 @@ import Link from '@docusaurus/Link';
 </label>
 <label for="coffee">
 <span class="py-2 px-5 rounded-full inline-block"><img src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/x0NbX46U-x4.webp" class="h-8" style={{ width: "42px", height: "42px" }}/></span>
+</label>
+<label for="kofi">
+<span class="py-2 px-5 rounded-full inline-block"><img src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/oPEVkwR8-x4.webp" class="h-8" style={{ width: "42px", height: "42px" }}/></span>
 </label>
 </div>    
 
@@ -51,7 +55,15 @@ import Link from '@docusaurus/Link';
   Buy me a coffee
 </button>
 </Link>
-</div>   
+</div>
+<div class="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl hidden tab-kofi">
+<Link to="https://ko-fi.com/dragonjay">
+<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+  <i class="fa-duotone fa-cup-togo mr-2 -ml-1 w-5 h-5"></i>
+  Buy me a kofi
+</button>
+</Link>
+</div>    
 </div> 
 
 <div id="waline"></div>
