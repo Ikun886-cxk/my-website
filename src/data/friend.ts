@@ -114,6 +114,27 @@ const Friends: Friend[] = [
     website: 'https://love2wind.cn',
     tags: [ 'favorite','design' ],
   },
+  {
+    title: '萌 Hz',
+    description: '一个随缘更新的 blog',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://www.moehz.com/',
+    website: 'https://www.moehz.com/',
+    tags: [ 'favorite','design' ],
+  },
+  {
+    title: '小U',
+    description: 'Science lights up the world',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://blog.starysky.top',
+    website: 'https://blog.starysky.top',
+    tags: [ 'favorite','design' ],
+  },
+  {
+    title: 'hissin',
+    description: '念念不忘，必有回响',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://hissin.cn/',
+    website: 'https://hissin.cn/',
+    tags: [ 'favorite','design' ],
+  },
 ]
 
 export const TagList = Object.keys(Tags) as TagType[]
