@@ -65,6 +65,13 @@ const Friends: Friend[] = [
     website: 'https://www.fantanstic.top/',
     tags: [ 'favorite' ],
   },
+  {
+    title: 'Misaka19215の小窝',
+    description: '记录我的普通生活',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://misaka19215.cn/',
+    website: 'https://misaka19215.cn/',
+    tags: [ 'favorite' ],
+  },
 ]
 
 export const TagList = Object.keys(Tags) as TagType[]
