@@ -58,6 +58,13 @@ const Friends: Friend[] = [
     website: 'https://blog.yanqingshan.com/',
     tags: [ 'favorite' ],
   },
+  {
+    title: '老陈の咸鱼日常',
+    description: 'Life is fantanstic.',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://www.fantanstic.top/',
+    website: 'https://www.fantanstic.top/',
+    tags: [ 'favorite' ],
+  },
 ]
 
 export const TagList = Object.keys(Tags) as TagType[]
