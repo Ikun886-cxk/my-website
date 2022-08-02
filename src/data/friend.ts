@@ -76,7 +76,7 @@ const Friends: Friend[] = [
     title: 'MOCEHU的博客',
     description: '记录我想记录的一切',
     preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://mocehu.top',
-    website: 'https://mocehu.top',
+    website: 'https://mocehu.cn',
     tags: [ 'favorite' ],
   },
   {
