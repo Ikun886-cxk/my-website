@@ -285,5 +285,43 @@
   "theme.PwaReloadPopup.closeButtonAriaLabel": {
     "message": "关闭",
     "description": "The ARIA label for close button of PWA reload popup"
+  },
+  "游戏及其周边的整合": {
+    "message": "游戏及其周边的整合"
+  },
+  "钉钉视频及知识文档": {
+    "message": "钉钉视频及知识文档"
+  },
+  "unit 1 测试卷": {
+    "message": "unit 1 测试卷"
+  },
+  "一单元的单元测试卷": {
+    "message": "一单元的单元测试卷"
+  },
+  "搭建 Minecraft 服务器": {
+    "message": "搭建 Minecraft 服务器"
+  },
+  "教你如何在全平台搭建Minecraft 服务器": {
+    "message": "教你如何在全平台搭建Minecraft 服务器"
+  },
+  "theme.IdealImageMessage.loading": {
+    "message": "加载中……",
+    "description": "When the full-scale image is loading"
+  },
+  "theme.IdealImageMessage.load": {
+    "message": "点击加载图片{sizeMessage}",
+    "description": "To prompt users to load the full image. sizeMessage is a parenthesized size figure."
+  },
+  "theme.IdealImageMessage.offline": {
+    "message": "你的浏览器处于离线状态。图片未加载",
+    "description": "When the user is viewing an offline document"
+  },
+  "theme.IdealImageMessage.404error": {
+    "message": "未找到图片",
+    "description": "When the image is not found"
+  },
+  "theme.IdealImageMessage.error": {
+    "message": "出现错误，点击重试",
+    "description": "When the image fails to load for unknown error"
   }
 }
