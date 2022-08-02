@@ -93,6 +93,27 @@ const Friends: Friend[] = [
     website: 'https://www.uxudjs.top',
     tags: [ 'favorite' ],
   },
+  {
+    title: 'SeaYJ',
+    description: '一个人的世界',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://seayj.cn/',
+    website: 'https://seayj.cn/',
+    tags: [ 'favorite','design' ],
+  },
+  {
+    title: '泠风寒声の小站',
+    description: '沉浸在Touch Fish的海洋中无法自拔',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://blog.lfhsheng.com/',
+    website: 'https://blog.lfhsheng.com/',
+    tags: [ 'favorite','design' ],
+  },
+  {
+    title: '涅槃博客',
+    description: '记录生活、分享世界。',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://love2wind.cn',
+    website: 'https://love2wind.cn',
+    tags: [ 'favorite','design' ],
+  },
 ]
 
 export const TagList = Object.keys(Tags) as TagType[]
