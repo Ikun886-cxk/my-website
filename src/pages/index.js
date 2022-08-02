@@ -4,15 +4,9 @@ import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 import "tailwindcss/tailwind.css";
 
-var script = document.createElement('script');
-script.type = 'text/javascript';
-script.async = true;
-script.src = 'https://fastly.jsdelivr.net/gh/SurpriseLon/Fontawesome-6@main/js/all.js';
-document.head.appendChild(script);
-
 export default function Hello() {
   return (
-    <Layout script title="Hello" description="DragonJay's wiki">
+    <Layout title="Hello" description="DragonJay's wiki">
 <section class="bg-white dark:bg-slate-800">
          <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
              <Link to="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
@@ -33,8 +27,8 @@ export default function Hello() {
            <div class="mx-auto xl:px-12">
       <div class="flex mb-2 items-center mr-10 lg:mr-20 xl:mr-32">
         <div class="flex justify-center items-center mr-4 w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700">
-        <i class="fa-duotone fa-gamepad-modern w-5 h-5 text-blue-600 dark:text-blue-500 lg:w-6 lg:h-6"></i></div>
-        <span class="text-xl font-bold text-gray-900 dark:text-white">Game</span></div>
+        <img src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/gamepad-modern.svg" class="fa-duotone fa-gamepad-modern w-5 h-5 text-blue-600 dark:text-blue-500 lg:w-6 lg:h-6"/></div>
+        <span class="text-xl font-bold dark:text-white">Game</span></div>
       </div>
  <div class="container mx-auto font-mono text-lg "><Translate>游戏及其周边的整合</Translate></div>
  <div class="lg:flex md:flex container mx-auto ">
@@ -51,8 +45,8 @@ export default function Hello() {
 <div class="mx-auto py-4 xl:px-12">
       <div class="flex -mb-2 items-center mr-10 lg:mr-20 xl:mr-32">
         <div class="flex justify-center items-center mr-4 w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700">
-        <i class="fa-duotone fa-graduation-cap w-5 h-5 text-blue-600 dark:text-blue-500 lg:w-6 lg:h-6"></i></div>
-        <span class="text-xl font-bold text-gray-900 dark:text-white">Study</span></div>
+        <img src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/graduation-cap.svg" class="fa-duotone fa-gamepad-modern w-5 h-5 text-blue-600 dark:text-blue-500 lg:w-6 lg:h-6"/></div>
+        <span class="text-xl font-bold dark:text-white">Study</span></div>
       </div>
  <div class="font-mono text-lg container mx-auto "><Translate>钉钉视频及知识文档</Translate></div>
  <div class="lg:flex md:flex container mx-auto ">
