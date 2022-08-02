@@ -1,0 +1,187 @@
+---
+title: 搭建 Minecraft 服务器
+id: Minecraftserver
+sidebar_position: 2
+slug: ../minecraftserver
+---
+import Head from '@docusaurus/Head';
+import Link from '@docusaurus/Link';
+import Typography from '@mui/material/Typography';
+import { Fancybox as NativeFancybox } from "@fancyapps/ui/dist/fancybox.esm.js";
+import "@fancyapps/ui/dist/fancybox.css";
+import Admonition from '@theme/Admonition';
+
+<head>
+<script src="https://fastly.jsdelivr.net/gh/SurpriseLon/Fontawesome-6@main/js/all.js" async=""></script>
+<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+<script src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/common.js"></script>
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8434505608196685"
+     crossorigin="anonymous"></script>
+</head>
+
+## <i class="fa-duotone fa-arrow-right-to-arc"></i> 简介
+
+<Typography variant="subtitle1" gutterBottom component="div">
+Minecraft是一款流行的沙盒视频游戏。它最初发布于2009年，允许玩家在一个块状3D生成的世界中建造、探索、制作和生存。截至2022年初，它是有史以来最畅销的视频游戏。在本教程中，你将创建自己的Minecraft服务器，以便你和你的朋友可以一起玩。具体来说，你将安装必要的软件包来运行Minecraft，配置服务器来运行，然后部署游戏。
+ </Typography>   
+
+<Admonition type="tip">
+  <p>
+    本教程使用<Link to="https://www.minecraft.net/zh-hans/store/minecraft-java-edition/">Java版本的Minecraft</Link>。如果你通过微软应用商店购买了你的Minecraft版本，你将无法连接到这个服务器。大多数在游戏机上购买的Microsoft版本，如PlayStation 4、Xbox One或Nintendo Switch，也是微软版本的Microsoft。这些游戏机也无法连接到本教程中构建的服务器。你可以在<Link to="https://www.minecraft.net/zh-hans/get-Minecraft">这里</Link>获得Java版本的Minecraft。
+  </p>
+</Admonition>
+
+## <i class="fa-duotone fa-presentation-screen"></i> 先决条件
+
+<Typography variant="subtitle1" gutterBottom component="div">
+一台新安装了Ubuntu 22.04的服务器，一个具有sudo权限的非root用户，并启用了SSH。Minecraft可能是资源密集型的，所以在选择服务器大小时要记住这一点。如果你使用DigitalOcean，需要更多的资源，你可以随时调整你的Droplet大小，以增加更多的CPU和内存。
+
+一个安装在本地Mac、Windows或Linux机器上的Minecraft Java版副本。
+</Typography>
+
+## Windows PC
+
+<Typography variant="subtitle1" gutterBottom component="div">
+如果你不想建立一个远程Minecraft服务器，你可以在你的电脑上这样做。设置专用Minecraft服务器的过程将取决于你的操作系统。如果你的电脑符合硬件和系统要求，就可以做到这一点。
+</Typography>    
+
+### 1. 获取最新版本的Java
+
+<Typography variant="subtitle1" gutterBottom component="div">
+打开Windows控制面板。在 "程序 "下，寻找Java，并点击 "立即更新"。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+打开一个命令提示符，输入<code>java -version</code>。你应该看到一个版本号。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+<Link to="https://www.java.com/zh-CN/download/">检查Java网站，看看最新的版本是什么。</Link>
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+如果你的版本已经过时，或者你没有安装Java，请从官方网站上下载它。
+</Typography>
+
+<Typography variant="subtitle1" gutterBottom component="div">
+ Minecraft及其服务器需要Java SE Development Kit 17.0.1或更高版本。如果你有，请继续进行下一步。否则，请从<Link to="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">官方渠道</Link>下载Java安装程序。
+ </Typography>   
+
+ ### 2. 为你的Minecraft服务器文件选择一个位置
+
+<Typography variant="subtitle1" gutterBottom component="div">
+在你下载Minecraft服务器软件之前，在你的电脑上选择一个你想运行服务器的位置。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+当你第一次运行服务器时，它将创建一些配置文件。最好是将所有这些文件存储在一个专门的文件夹中。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+你可以把这个文件夹放在你的桌面上，放在你的文档文件夹里，放在你的程序文件夹里，或者放在其他你喜欢的地方。这完全取决于你。
+</Typography>
+
+### 3. 下载并启动Minecraft服务器软件
+
+<Typography variant="subtitle1" gutterBottom component="div">
+    从<Link to="https://www.minecraft.net/zh-hans/download/server">Minecraft官方页面</Link>下载Minecraft Java版服务器软件（.jar文件）。
+</Typography>
+<Admonition type="caution">
+  <p>
+    重要的是! 当你下载服务器.jar文件时，可能会弹出一个警告信息。这是正常的，只要你从一个可靠的来源获得该文件，就很安全。
+  </p>
+</Admonition>
+<Typography variant="subtitle1" gutterBottom component="div">
+双击.jar文件来启动服务器。它将创建服务器配置文件，在服务器可以使用之前，需要对这些文件进行修改。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+接受EULA：一个名为eula.txt的文本文件被创建。在文本编辑器中打开该文件，将eula=false改为eula=true。不接受EULA将使你无法启动Minecraft服务器。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+如果你看到一个 "无法保存服务器属性 "的错误怎么办？通过右击.jar文件并选择 "以管理员身份运行 "来以管理员身份运行Minecraft服务器。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+双击该文件，在同一文件夹中生成最终用户许可协议（eula.txt）。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+使用文本编辑器如记事本打开eula.txt，将eula值从false改为true。所有Minecraft服务器都要求用户在运行游戏前同意<Link to="https://account.mojang.com/documents/minecraft_eula">Minecraft EULA</Link>。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+在同一文件夹中，创建一个新的文本文件（例如：newdoc.txt）。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+在文本编辑器中打开新的文本文件，并粘贴在脚本中以运行Minecraft。在这种情况下，-Xms256M和-Xmx1G是你的服务器的最小和最大内存，为游戏分配的。
+</Typography>
+
+```jsx live
+@echo off
+start "My Server" /min java -Xms256M -Xmx1G -jar server.jar nogui
+```
+
+<Typography variant="subtitle1" gutterBottom component="div">
+在文本编辑器中，选择 "另存为"，将文件名改为run.bat。请确保将类型保持为所有类型。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+通过双击run.bat Minecraft文件运行服务器。你可能需要允许该程序通过防火墙连接到互联网。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+如果你不想创建Minecraft服务器bat文件或无法做到这一点，你仍然可以手动运行你的服务器--打开命令提示符并导航到专门的Minecraft文件夹。比如说
+</Typography>
+<code>cd Documents/Minecraft</code>
+<Typography variant="subtitle1" gutterBottom component="div">
+然后，手动运行命令来执行服务器.jar文件。
+</Typography>
+<code>java -Xmx256M -Xms1024M -jar server.jar nogui</code>
+<Admonition type="tip">
+  <p>
+    在同一文件夹中，你会发现文件server.properties - 用文本编辑器打开它，以调整你的服务器设置，如默认的Minecraft端口，游戏模式，最大数量的玩家和更多。
+  </p>
+</Admonition>
+
+### 4. 在你的路由器上启用端口转发功能
+
+<Typography variant="subtitle1" gutterBottom component="div">
+注意：端口转发可能是一种安全风险。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+如果你只是在你的本地网络上为玩家托管一个服务器，你不需要担心端口转发的问题。但是，如果你想让你的服务器对全世界开放，你就需要在你的路由器上启用端口转发。(要了解更多关于端口转发的信息，<Link to="https://portforward.com/">请查看PortForward.com的教程</Link>）。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+请参考你的路由器文档，找到关于如何为你的设备配置端口转发的具体说明。对于Minecraft，你需要转发TCP端口25565。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+你还需要输入你服务器的本地IP地址作为转发端口的输出IP或服务器IP。这告诉路由器要指向哪个设备。要找到你的服务器的本地IP，打开一个命令提示符并输入ipconfig。
+</Typography>
+<Admonition type="tip">
+  <p>
+    建议参照<Link to="https://doc.natfrp.com/#/app/mc">Sakura Frp</Link>的穿透教程
+  </p>
+</Admonition>
+
+### 5. 连接到你的服务器
+
+<Typography variant="subtitle1" gutterBottom component="div">
+玩家可以通过以下步骤加入你的服务器。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+在Minecraft中选择 "多人游戏"。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+点击 "添加服务器"。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+输入你的服务器名称。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+输入你的服务器地址。你的服务器地址是你的IP地址，其次是端口号25565。你可以通过在谷歌上搜索 "我的IP地址 "来找到你的公共IP地址。如果你有一个IPv6地址，你应该在它周围加上方括号[]。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+点击 "完成"。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+Minecraft现在应该连接到服务器，玩家将能够点击 "加入服务器"。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+如果你遇到任何问题，请将你的公共IP地址输入<Link to="https://dinnerbone.com/minecraft/tools/status/">Minecraft服务器状态检查器</Link>，以检查你的服务器是否可以访问。
+</Typography>
+
+<div id="waline"></div>

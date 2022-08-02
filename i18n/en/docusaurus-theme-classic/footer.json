@@ -13,7 +13,7 @@
   },
   "link.item.label.游戏": {
     "message": "Game",
-    "description": "The label of footer link with label=游戏 linking to /games"
+    "description": "The label of footer link with label=游戏 linking to /category/games"
   },
   "link.item.label.Facebook": {
     "message": "Facebook",
