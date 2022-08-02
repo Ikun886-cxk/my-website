@@ -72,6 +72,27 @@ const Friends: Friend[] = [
     website: 'https://misaka19215.cn/',
     tags: [ 'favorite' ],
   },
+  {
+    title: 'MOCEHU的博客',
+    description: '记录我想记录的一切',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://mocehu.top',
+    website: 'https://mocehu.top',
+    tags: [ 'favorite' ],
+  },
+  {
+    title: 'Heartalborada’s Blog',
+    description: '只是一位初中生罢了',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://blog.loliurl.club',
+    website: 'https://blog.loliurl.club',
+    tags: [ 'favorite','design' ],
+  },
+  {
+    title: 'UXU倒计时的博客',
+    description: '一个人的世界',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://www.uxudjs.top',
+    website: 'https://www.uxudjs.top',
+    tags: [ 'favorite' ],
+  },
 ]
 
 export const TagList = Object.keys(Tags) as TagType[]
