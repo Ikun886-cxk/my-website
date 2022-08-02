@@ -3,11 +3,16 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 import "tailwindcss/tailwind.css";
-import "https://fastly.jsdelivr.net/gh/SurpriseLon/Fontawesome-6@main/js/all.js";
+
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.async = true;
+script.src = 'https://fastly.jsdelivr.net/gh/SurpriseLon/Fontawesome-6@main/js/all.js';
+document.head.appendChild(script);
 
 export default function Hello() {
   return (
-    <Layout title="Hello" description="DragonJay's wiki">
+    <Layout script title="Hello" description="DragonJay's wiki">
 <section class="bg-white dark:bg-slate-800">
          <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
              <Link to="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
