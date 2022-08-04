@@ -41,6 +41,15 @@ export default function Hello() {
     </div>
 </div>
 </Link>
+<Link to="/games/tavernofspear">
+<div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg" src="https://img.itch.zone/aW1nLzk2NjYyMjgucG5n/original/WFwGZ0.png" alt=""/>
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><Translate>矛之酒馆</Translate></h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><Translate>你是来自失落之矛部落的年轻冒险家，你已经成年，准备证明自己是一名冒险家。</Translate></p>
+    </div>
+</div>
+</Link>
 </div>
 <div class="mx-auto py-4 xl:px-12">
       <div class="flex -mb-2 items-center mr-10 lg:mr-20 xl:mr-32">

@@ -326,5 +326,11 @@
   "theme.IdealImageMessage.error": {
     "message": "Error. Click to reload",
     "description": "When the image fails to load for unknown error"
+  },
+  "矛之酒馆": {
+    "message": "Tavern of Spear"
+  },
+  "你是来自失落之矛部落的年轻冒险家，你已经成年，准备证明自己是一名冒险家。": {
+    "message": "You are the young adventurer from the Lost Spear Tribe who’s come of age and ready to prove himself as an adventurer. "
   }
 }
