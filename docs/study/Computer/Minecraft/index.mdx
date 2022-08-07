@@ -184,4 +184,72 @@ Minecraft现在应该连接到服务器，玩家将能够点击 "加入服务器
 如果你遇到任何问题，请将你的公共IP地址输入<Link to="https://dinnerbone.com/minecraft/tools/status/">Minecraft服务器状态检查器</Link>，以检查你的服务器是否可以访问。
 </Typography>
 
+## Mac
+
+### 1. 确保你已经安装了Java。
+
+<Typography variant="subtitle1" gutterBottom component="div">
+在macOS上设置Minecraft服务器还需要安装最新版本的Java。下面是如何做到这一点:
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+较新版本的MacOS默认包括Java。如果你运行的是旧版本的MacOS（OS X），你可能需要<Lint to="https://support.apple.com/kb/DL1572?viewlocale=zh_CN">从苹果网站下载遗留版本的Java</Link>。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+较新版本的macOS默认包括Java。在你的终端上输入这个命令，仔细检查版本。
+</Typography>
+
+```jsx live
+java -version
+```
+
+### 2. 为你的Minecraft服务器文件选择一个位置。
+
+<Typography variant="subtitle1" gutterBottom component="div">
+创建一个文件夹来包含你的Minecraft与服务器文件。例如，你可以在你的桌面上创建该文件夹，但选择权完全在你手中。
+</Typography>
+
+### 3. 下载Minecraft服务器软件。
+
+<Typography variant="subtitle1" gutterBottom component="div">
+从Minecraft网站下载服务器软件。它是一个Java .jar文件。把它保存到你在上一步选择的位置。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+打开TextEdit，将格式设置为纯文本（Format -> Make Plain Text）。粘贴以下一行。
+</Typography>
+
+```jsx live
+#!/bin/bash
+cd "$(dirname "$0")"
+exec java -Xms1024M -Xmx1024M -jar minecraft_server.1.18.jar nogui
+```
+
+<Typography variant="subtitle1" gutterBottom component="div">
+将该文件作为start.command保存在服务器.jar文件所在的同一文件夹中。
+</Typography>
+<Typography variant="subtitle1" gutterBottom component="div">
+startmc.command文件需要有执行权限才能工作。要授予它，打开终端并导航到你的Minecraft文件夹。比如说
+</Typography>
+
+```jsx live
+cd Documents/MinecraftServer
+```
+
+<Typography variant="subtitle1" gutterBottom component="div">
+使用chmod命令授予所需的权限。
+</Typography>
+
+```jsx live
+chmod a+x startmc.command
+```
+
+<Typography variant="subtitle1" gutterBottom component="div">
+如果过程成功，双击startmc.command文件将在一个新的终端窗口中启动服务器。
+</Typography>
+<Admonition type="tip">
+  <p>
+    可能会出现缺少文件或目录的警告。当你第一次运行Minecraft服务器时，这是完全正常的。
+  </p>
+</Admonition>
+
+
 <div id="waline"></div>

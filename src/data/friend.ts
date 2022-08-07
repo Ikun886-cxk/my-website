@@ -135,6 +135,13 @@ const Friends: Friend[] = [
     website: 'https://hissin.cn/',
     tags: [ 'favorite','design' ],
   },
+  {
+    title: '马火星的秘密小屋',
+    description: '可能有一些学习心得和日常',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://blog.mayu8633.tk/',
+    website: 'https://blog.mayu8633.tk/',
+    tags: [ 'favorite','design' ],
+  },
 ]
 
 export const TagList = Object.keys(Tags) as TagType[]
