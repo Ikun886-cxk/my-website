@@ -3,7 +3,6 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 import "tailwindcss/tailwind.css";
-import "material-dynamic-colors";
 
 export default function Hello() {
   return (
