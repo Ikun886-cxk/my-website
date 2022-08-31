@@ -33,7 +33,7 @@ export default function Hello() {
  <div class="container mx-auto font-mono text-lg "><Translate>游戏及其周边的整合</Translate></div>
  <div class="lg:flex md:flex container mx-auto ">
  <Link to="/games/lvyunlu">     
-<div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+<div class="max-w-sm lg:mx-4 md:mx-4 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
         <img class="rounded-t-lg" src="https://onedrive-vercel-index-beta-pearl.vercel.app/api/raw/?path=/wiki/Lvyunlu.webp" alt=""/>
     <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><Translate>履云录</Translate></h5>
@@ -64,7 +64,7 @@ export default function Hello() {
         <img class="rounded-t-lg" src="https://down.dingtalk.com/ddmedia/iAEKAqNqcGcDAATNBkAFzQOEBtoAI4QBpCEHBLICqim3UnrZOH1NOeIDzwAAAX-GCOo7BM4AG9t8BwAIAA.jpg" alt=""/>
     <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><Translate>unit 1 测试卷</Translate></h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><Translate>一单元的单元测试卷</Translate></p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><Translate>英语一单元的单元测试卷</Translate></p>
     </div>
 </div>
 </Link>
@@ -74,6 +74,15 @@ export default function Hello() {
     <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><Translate>搭建 Minecraft 服务器</Translate></h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><Translate>教你如何在全平台搭建Minecraft 服务器</Translate></p>
+    </div>
+</div>
+</Link>
+<Link to="/study/Computer/vf4">     
+<div class="max-w-sm lg:mx-4 md:mx-4 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg" src="https://down.dingtalk.com/ddmedia/iAELAqNqcGcDAATNBkAFzQOEBtoAI4QBpCE2P1gCqk2C-UmKLSgMgIYDzwAAAX-HtJagBM4AJVhKBwAIAA.jpg" alt=""/>
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><Translate>VF第四章</Translate></h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><Translate>Visual Foxpro第四章测试卷</Translate></p>
     </div>
 </div>
 </Link>
