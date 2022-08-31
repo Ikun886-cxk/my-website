@@ -138,8 +138,8 @@ const Friends: Friend[] = [
   {
     title: '马火星的秘密小屋',
     description: '可能有一些学习心得和日常',
-    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://blog.mayu8633.tk/',
-    website: 'https://blog.mayu8633.tk/',
+    preview: 'https://image.thum.io/get/width/1920/crop/1080/allowJPG/wait/20/noanimate/https://blog.1314171.xyz',
+    website: 'https://blog.1314171.xyz',
     tags: [ 'favorite','design' ],
   },
 ]
